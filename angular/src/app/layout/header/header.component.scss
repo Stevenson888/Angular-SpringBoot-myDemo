@@ -1,0 +1,19 @@
+.header{
+  padding-left:250px;
+  background: rgb(48, 65, 86);
+  height: 70px;
+  line-height: 70px;
+  color:#fff;
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#fff;
+    padding: 20px;
+  }
+
+  a.active{
+
+    color:#cecb48;
+  }
+}

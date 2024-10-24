@@ -1,0 +1,51 @@
+<!--<p>users works!</p>-->
+
+<!--<div class="content">-->
+
+
+<!--  <div class="right">-->
+<!--    <router-outlet></router-outlet>-->
+
+    <!--        <ul>-->
+    <!--          <li *ngFor="let item of list">-->
+    <!--            {{item.username}}-->
+    <!--          </li>-->
+    <!--        </ul>-->
+
+    <div class="container">
+      <h2 class="text-center">USERS PAGE</h2>
+      <table class="table table-stripped">
+        <thead>
+        <tr>
+          <th>username</th>
+          <th>nickName</th>
+          <th>age</th>
+          <th>sex</th>
+          <th>phone</th>
+          <th>email</th>
+          <th>address</th>
+          <th>role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of list">
+          <td> {{ user.username }} </td>
+          <td> {{ user.nickName }} </td>
+          <td> {{ user.age }} </td>
+          <td> {{ user.sex }} </td>
+          <td> {{ user.phone }} </td>
+          <td> {{ user.email }} </td>
+          <td> {{ user.address }} </td>
+          <td> {{ user.role }} </td>
+          <!--            <td>-->
+          <!--              <button (click) = "updateUser(user.id)" class="btn btn-info">Update</button>-->
+          <!--              <button (click) = "deleteUser(user.id)" class="btn btn-danger">Delete</button>-->
+          <!--            </td>-->
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+<!--  </div>-->
+
+<!--</div>-->

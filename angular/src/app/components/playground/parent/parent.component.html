@@ -1,0 +1,19 @@
+<p>parent works!</p>
+<app-child1 [title]="title"  [msg]="msg" [run]='run' [parent]='this'></app-child1>
+
+<br><hr />
+
+<!--<app-user></app-user>-->
+
+<app-child2 #child2></app-child2>
+<button (click)="getChildMsg()">获取子组件child2的msg</button>
+<br>
+<button (click)="getChildRun()">执行子组件child2的run()方法</button>
+
+<br><hr />
+
+<app-child3 #child3  (outer)="runInChild3($event)"></app-child3>
+
+<br><hr />
+
+<app-lifecycle [title]="title"></app-lifecycle>

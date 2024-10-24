@@ -1,0 +1,16 @@
+<!--<p>person works!</p>-->
+
+<div class="content">
+
+    <div class="left">
+        <a [routerLink]="[ '/person/account']" routerLinkActive="active">我的账号</a>
+        <br>
+        <br>
+        <a [routerLink]="[ '/person/password']" routerLinkActive="active">修改密码</a>
+    </div>
+
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
